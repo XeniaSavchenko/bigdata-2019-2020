@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Блокчейн</title>
+</head>
+
+<body>
+  <style>
+    .none {
+      visibility: hidden;
+    }
+
+    .nav-item-active {
+      background: cyan;
+    }
+  </style>
+  <div id="error" class="none">Не удалось войти в систему</div>
+  <div id="container" class="none">
+    <h2 id="name-container"></h2>
+    <button class="nav-item nav-item-active">BTC</button>
+    <button class="nav-item">LTC</button>
+    <button class="nav-item">GRC</button>
+    <button class="nav-item">AUR</button>
+    <button class="nav-item">DASH</button>
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Amount</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="users-container"></tbody>
+    </table>
+  </div>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
